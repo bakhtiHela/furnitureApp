@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="DecoHome"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="Your first destination for furniture in Tunisia"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#F3AFAF" />
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="-64dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="36dp"
+                            android:layout_marginBottom="24dp"
+                            android:fontFamily="@font/calibri"
+                            android:text="Welcome Back!"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="24sp" />
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:textColorHint="#FFB3B3B3">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:drawableStart="@drawable/ic_person_gray_24dp"
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/calibri"
+                                android:hint="Email"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:textColorHint="#FFB3B3B3"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:drawableStart="@drawable/ic_lock_gray_24dp"
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/calibri"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/calibri"
+                    android:text="Sign In"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account?"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Sign Up"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

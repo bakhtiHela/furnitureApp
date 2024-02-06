@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "262658591167",
+    "project_id": "fourniture2-92e5d",
+    "storage_bucket": "fourniture2-92e5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262658591167:android:a5e5ac494a780e5347f90a",
+        "android_client_info": {
+          "package_name": "com.example.fourniture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPGyX9afgdBL_4CcVneZ72ZIEmFNX0I6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

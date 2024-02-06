@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DecoHome</string>
+    <string name="fab_favorite_description">Bouton Favoris</string>
+
+</resources>
